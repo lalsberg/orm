@@ -7,13 +7,12 @@ public class Event {
     private String title;
     private Date date;
 
-    public Event() {}
-
     public Long getId() {
         return id;
     }
 
-    private void setId(Long id) {
+    @SuppressWarnings("unused")
+	private void setId(Long id) {
         this.id = id;
     }
 
