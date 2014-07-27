@@ -1,4 +1,4 @@
-package com.handson.orm.model;
+package com.handson.orm.bo;
 import java.util.Date;
 
 public class Event {
