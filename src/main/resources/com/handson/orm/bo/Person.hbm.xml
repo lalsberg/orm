@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.handson.orm.bo">
+
+	<class name="Person" table="Persons">
+		
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		
+		<property name="age"/>
+		<property name="firstname"/>
+		<property name="lastname"/>
+	
+		<set name="events" table="person_event">
+			<key column="person_id"/>
+			<many-to-many column="event_id" class="Event"/>
+		</set>
+	</class>
+
+</hibernate-mapping>

@@ -32,6 +32,7 @@
 		<property name="hbm2ddl.auto">update</property>
 		
 		<mapping resource="com/handson/orm/bo/Event.hbm.xml"/>
+		<mapping resource="com/handson/orm/bo/Person.hbm.xml"/>
 
 	</session-factory>
 
