@@ -31,4 +31,9 @@ public class Event {
     public void setTitle(String title) {
         this.title = title;
     }
+
+	@Override
+	public String toString() {
+		return "Event [id=" + id + ", title=" + title + ", date=" + date + "]";
+	}
 }
